@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { Location } from 'expo';
-import { FETCH_JOBS, LIKE_JOB } from './types'
+import { FETCH_JOBS, LIKE_JOB, CLEAR_LIKED_JOBS } from './types'
 import qs from 'qs'
 import JOB_DATA from './Job_data.json'
 
@@ -43,7 +43,9 @@ export const likeJobs = (job) => {
     }
 }
 
-
+export const clearLikedJobs = () => {
+    return { type: CLEAR_LIKED_JOBS };
+}
 
 
 
