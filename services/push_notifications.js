@@ -6,7 +6,7 @@ const PUSH_ENDPOINT = '' // token endpoint
 
 export default async () => { 
     let previousToken = await AsyncStorage.getItem('pushtoken');
-    console.log(previousToken);
+    
     if(previousToken){
         return;
     } else{       
