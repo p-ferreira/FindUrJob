@@ -6,7 +6,7 @@ import JOB_DATA from './Job_data.json'
 
 const JOB_ROOTURL = 'http://api.indeed.com/ads/apisearch?';
 const JOB_QUERY_PARAMS = {
-    publisher: '4201738803816157',
+    publisher: '', //code
     format: 'json',
     v: '2',
     latlong: 1,
